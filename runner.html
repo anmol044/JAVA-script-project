@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dark Mode Toggle</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 20px;
+    }
+    
+    #content {
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+    
+    .darkmode {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    .darkmode #content {
+      background-color: #444;
+      border-color: #555;
+    }
+  </style> 
+</head>
+<body>
+  <button id="Button" onclick="DarkMode()"> Dark Mode</button>
+  <div id="content">
+    <h1>Welcome to my website!</h1>
+    <p>This is a sample text.</p>
+  </div>
+  <script>
+    function DarkMode() {
+      document.body.classList.toggle("darkmode");
+    }
+  </script>
+</body>
+</html>
